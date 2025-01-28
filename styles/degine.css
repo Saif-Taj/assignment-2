@@ -189,13 +189,24 @@ body {
   
   .story-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     
     gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+
   }
-  
+  .item-1{
+    grid-column: 1 / 3 ;
+    grid-row: 1;
+  }
+ .colum{
+  display: grid;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(2);
+ 
+ }
+ 
   .story-card {
     background: white;
     border-radius: 8px;
@@ -312,3 +323,26 @@ body {
 }
 
   
+@media screen and (max-width:768px) {
+  .header{
+    position: absolute;
+    width: 358px;
+    height: 46px;
+    left: 16px;
+    right: -16px;
+    top: 12px;
+    bottom: -12px;
+    .image{
+     
+position: static;
+width: 336.58px;
+height: 413px;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 20px 0px;
+    }
+  }
+  
+}
